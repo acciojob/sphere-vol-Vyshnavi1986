@@ -14,4 +14,4 @@ if(radius<0)
   document.getElementById("result").innerHTML = "The volume of the sphere is: " + volume.toFixed(4);
 }
 
-window.onload = document.getElementById('MyForm').onsubmit = calculateVolume();
+window.onload = document.getElementById('MyForm').onclick = calculateVolume();
