@@ -6,7 +6,7 @@ function calculateVolume() {
   var volume = (4/3) * Math.PI * Math.pow(radius, 3);
 
   // Display the resul
-  document.getElementById("result").innerHTML = "The volume of the sphere is: " + volume.toFixed(6);
+  document.getElementById("result").innerHTML = "The volume of the sphere is: " + volume.toFixed(4);
 }
 
 window.onload = document.getElementById('MyForm').onsubmit = calculateVolume();
