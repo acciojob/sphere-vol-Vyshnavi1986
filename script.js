@@ -1,17 +1,14 @@
-function calculateVolume() {
-  // Get the radius input value
-  var radius = document.getElementById("radius").value;
-if(radius<0)
-{
-	document.getElementbyId("result").innerHTML="The volume of the sphere is" +NAN;
-	return
-}
-	
-  // Calculate the volume of the sphere
-  var volume = (4/3) * Math.PI * Math.pow(radius, 3);
+function volume_sphere() {
+    //Write your code here
+    let radius = document.getElementById("radius").value;
+   let volume =  (4/3) * Math.PI * Math.pow(radius, 3);
+	volume = volume.toFixed(4);
+     document.getElementById("volume").value = volume
+    // console.log(radius);
 
-  // Display the resul
-  document.getElementById("result").innerHTML = "The volume of the sphere is: " + volume.toFixed(4);
-}
+    return false;
+     
+    
+} 
 
-window.onload = document.getElementById('MyForm').onclick = calculateVolume();
+window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
